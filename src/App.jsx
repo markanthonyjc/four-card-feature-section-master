@@ -1,5 +1,11 @@
+import FeatureHeader from './components/FeatureHeader.jsx'
+import FeatureCards from './components/FeatureCards.jsx'
+
 const App = () => {
-  return <h1>Hello World</h1>
+  return <main>
+    <FeatureHeader/>
+    <FeatureCards/>
+  </main>
 }
 
 export default App
