@@ -1,9 +1,9 @@
-import FeatureHeader from './components/FeatureHeader.jsx'
+import FeatureSummary from './components/FeatureSummary.jsx'
 import FeatureCards from './components/FeatureCards.jsx'
 
 const App = () => {
   return <main>
-    <FeatureHeader/>
+    <FeatureSummary/>
     <FeatureCards/>
   </main>
 }
