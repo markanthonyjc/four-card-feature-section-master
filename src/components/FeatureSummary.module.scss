@@ -1,10 +1,27 @@
+@import "../styles/variables";
+
+$font-size: 1.5rem;
+
 .feature-summary {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 2rem;
+  height: 300px;
 
-  p {
+  > p:nth-child(1) {
+    font-size: $font-size;
+    font-weight: $font-weight-extra-light;
+  }
+
+  > p:nth-child(2) {
+    font-size: $font-size;
+    font-weight: $font-weight-semi-bold;
+  }
+
+  > p:last-child {
     text-align: center;
+    color: $neutral-grayish-blue;
   }
 }
