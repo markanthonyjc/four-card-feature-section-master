@@ -1,9 +1,16 @@
 .feature-cards {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
 
   > * {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  > div:nth-child(2) {
+    > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
   }
 }
