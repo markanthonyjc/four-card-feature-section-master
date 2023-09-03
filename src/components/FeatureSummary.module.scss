@@ -8,15 +8,18 @@ $font-size: 1.5rem;
   justify-content: center;
   align-items: center;
   margin: 0 2rem;
+  max-width: 460px;
   height: 300px;
 
   > p:nth-child(1) {
     font-size: $font-size;
+    text-align: center;
     font-weight: $font-weight-extra-light;
   }
 
   > p:nth-child(2) {
     font-size: $font-size;
+    text-align: center;
     font-weight: $font-weight-semi-bold;
   }
 
