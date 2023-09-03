@@ -1,5 +1,6 @@
 import FeatureSummary from './components/FeatureSummary.jsx'
 import FeatureCards from './components/FeatureCards.jsx'
+import './App.module.scss'
 
 const App = () => {
   return <main>
