@@ -1,4 +1,5 @@
 @import "../styles/variables";
+@import "../styles/mixins";
 
 .card {
   display: flex;
@@ -14,7 +15,7 @@
     }
 
     > p {
-      color: $neutral-grayish-blue;
+      color: $base-paragraph_color;
       font-weight: $font-weight-regular;
       font-size: 0.8rem;
       text-align: left;
@@ -34,18 +35,18 @@
   }
 
   &--supervisor {
-    border-top: 4px solid $primary-cyan-color;
+    @include border-side-color(top, 4, $success-color);
   }
 
   &--team-builder {
-    border-top: 4px solid $primary-red-color;
+    @include border-side-color(top, 4, $danger-color);
   }
 
   &--karma {
-    border-top: 4px solid $primary-orange-color;
+    @include border-side-color(top, 4, $warning-color);
   }
 
   &--calculator {
-    border-top: 4px solid $primary-blue-color;
+    @include border-side-color(top, 4, $info-color);
   }
 }
