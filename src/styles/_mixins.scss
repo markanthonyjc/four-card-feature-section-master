@@ -1,0 +1,9 @@
+@mixin border-side-color($side, $size, $color) {
+  border-#{$side}: #{$size}px solid $color;
+}
+
+@mixin font-style-and-alignment($size, $weight, $alignment) {
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $alignment;
+}
