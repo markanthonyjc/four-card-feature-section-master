@@ -1,0 +1,27 @@
+//@import "./styles";
+
+@mixin border-side-color($side, $size, $color) {
+  border-#{$side}: #{$size}px solid $color;
+}
+
+@mixin font-style-and-alignment($size, $weight, $alignment) {
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $alignment;
+}
+
+@mixin animation-fadeIn($duration) {
+  animation: fadeIn $duration;
+
+  @keyframes fadeIn {
+    from {
+      margin-left: -30px;
+      opacity: 0;
+    }
+
+    to {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+}

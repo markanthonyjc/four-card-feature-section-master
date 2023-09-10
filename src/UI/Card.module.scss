@@ -1,0 +1,52 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 1.5rem 1px hsla(221, 47%, 73%, 0.5);
+
+  .summary {
+    > * {
+      margin-bottom: 0.5rem;
+    }
+
+    > p {
+      color: $base-paragraph_color;
+      font-weight: $font-weight-regular;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+  }
+
+  .image {
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+
+    > img {
+      //height: 25px;
+      width: 3rem;
+    }
+  }
+
+  &--supervisor {
+    @include border-side-color(top, 4, $success-color);
+  }
+
+  &--team-builder {
+    @include border-side-color(top, 4, $danger-color);
+  }
+
+  &--karma {
+    @include border-side-color(top, 4, $warning-color);
+  }
+
+  &--calculator {
+    @include border-side-color(top, 4, $info-color);
+  }
+}
