@@ -1,5 +1,12 @@
+import FeatureSummary from './components/FeatureSummary.jsx'
+import FeatureCards from './components/FeatureCards.jsx'
+import './App.scss'
+
 const App = () => {
-  return <h1>Hello World</h1>
+  return <main>
+    <FeatureSummary/>
+    <FeatureCards/>
+  </main>
 }
 
 export default App

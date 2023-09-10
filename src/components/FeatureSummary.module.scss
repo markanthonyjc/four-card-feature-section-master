@@ -1,0 +1,28 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.feature-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+  max-width: 460px;
+  height: 300px;
+
+  > p:first-child {
+    @include font-style-and-alignment(1.5rem, $font-weight-extra-light, center);
+    @include animation-fadeIn(0.5s);
+  }
+
+  > p:nth-child(2) {
+    @include font-style-and-alignment(1.5rem, $font-weight-semi-bold, center);
+    @include animation-fadeIn(0.5s);
+  }
+
+  > p:last-child {
+    text-align: center;
+    color: $base-paragraph_color;
+    @include animation-fadeIn(0.5s);
+  }
+}
