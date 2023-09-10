@@ -1,16 +1,20 @@
 {
+  "homepage": "https://markanthonyjc.github.io/four-card-feature-section-master",
   "name": "four-card-feature-section-master",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "main.jsx",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview --open"
+    "preview": "vite preview --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.4",
+    "gh-pages": "^6.0.0",
     "sass": "^1.66.1",
     "vite": "^4.4.5"
   },
